@@ -339,7 +339,7 @@ main {
 
 /* medium devices */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 1130px) {
   header {
     padding: 50px;
   }
