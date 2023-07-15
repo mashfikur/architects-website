@@ -180,6 +180,59 @@ main {
   padding-bottom: 0.65rem;
 }
 
+.hide{
+    display: none;
+}
+
+/* facts section styles */
+
+.facts{
+    margin-top: 8rem;
+}
+.facts-title{
+    color:#131313;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.facts-text{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.facts-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6.25rem;
+
+}
+
+/* card styles */
+
+.facts-card{
+    border-radius: 0.5rem;
+    border: 1px solid #FF900E;
+    padding: 2.85rem 2.25rem;
+    text-align: center;
+    width: 15rem;
+    height: 10rem;
+}
+
+.facts-card-title{
+    color: #424242;
+    font-size: 2.8125rem;
+    font-weight: 600;
+}
+
+.facts-cards-text{
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 /* responsive web design */
 /* small devices */
 @media screen and (max-width: 576px) {
@@ -204,6 +257,11 @@ main {
   .square-collage {
     grid-template-columns: 1fr;
   }
+
+  .facts-card-container{
+    flex-direction: column;
+    gap: 1.4rem;
+  }
 }
 
 /* medium devices */
@@ -223,5 +281,9 @@ main {
 
   .feature {
     flex-direction: column;
+  }
+
+  .facts-card-container{
+    gap: 1rem;
   }
 }
