@@ -138,10 +138,39 @@ main {
   padding-bottom: 2rem;
 }
 
+.feature-card-right img {
+  height: 75%;
+}
+
+.badge {
+  border-radius: 0.5rem;
+  background: #ff900e;
+  max-width: 15rem;
+  text-align: center;
+  padding: 2.8rem 2rem;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
+
+.badge-title {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.badge-text {
+  color: #fff;
+  font-size: 1.5625rem;
+}
+
 /* feature-card section styles */
 
 .feature-card-section {
   display: flex;
+  justify-content: space-between;
   margin-top: 8rem;
   gap: 9rem;
 }
@@ -178,10 +207,6 @@ main {
 
 .card-title {
   padding-bottom: 0.65rem;
-}
-
-.hide {
-  display: none;
 }
 
 /* facts section styles */
@@ -299,6 +324,17 @@ main {
   .sponsors-logo img {
     width: 165px;
   }
+  .feature-card-section {
+    flex-direction: column;
+  }
+
+  .feature-card-right img {
+    width: 100%;
+  }
+
+  .badge {
+    position: static;
+  }
 }
 
 /* medium devices */
@@ -334,5 +370,17 @@ main {
 
   .sponsors-logo img {
     width: 100px;
+  }
+
+  .feature-card-section {
+    flex-direction: column;
+  }
+
+  .feature-card-right img {
+    width: 100%;
+  }
+
+  .badge {
+    position: static;
   }
 }
