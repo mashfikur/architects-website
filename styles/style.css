@@ -93,6 +93,48 @@ nav {
 .banner-pic img {
   width: 100%;
 }
+/* main section styles */
+
+main {
+  max-width: 1440px;
+  margin: 5.3rem auto;
+}
+
+/* feature section styles */
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 4.7rem;
+}
+
+.square-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.feature-title {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.title-black {
+  font-weight: 700;
+  color: #131313;
+}
+
+.title-orange {
+  font-weight: 700;
+  color: #ff900e;
+}
+
+.feature-text {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
 
 /* responsive web design */
 /* small devices */
