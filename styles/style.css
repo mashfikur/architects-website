@@ -152,7 +152,7 @@ main {
   font-weight: 700;
   margin-bottom: 1.5rem;
   padding-left: 1.3rem;
-  border-left: 6px solid #FF900E;
+  border-left: 6px solid #ff900e;
 }
 
 .feature-card-text {
@@ -180,57 +180,86 @@ main {
   padding-bottom: 0.65rem;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 /* facts section styles */
 
-.facts{
-    margin-top: 8rem;
+.facts {
+  margin-top: 8rem;
 }
-.facts-title{
-    color:#131313;
-    font-size: 2.8125rem;
-    font-weight: 700;
-    padding-bottom: 1.5rem;
+.facts-title {
+  color: #131313;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
 }
-.facts-text{
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.625rem;
+.facts-text {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
 }
 
-.facts-card-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 6.25rem;
-
+.facts-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6.25rem;
 }
 
 /* card styles */
 
-.facts-card{
-    border-radius: 0.5rem;
-    border: 1px solid #FF900E;
-    padding: 2.85rem 2.25rem;
-    text-align: center;
-    width: 15rem;
-    height: 10rem;
+.facts-card {
+  border-radius: 0.5rem;
+  border: 1px solid #ff900e;
+  padding: 2.85rem 2.25rem;
+  text-align: center;
+  width: 15rem;
+  height: 10rem;
 }
 
-.facts-card-title{
-    color: #424242;
-    font-size: 2.8125rem;
-    font-weight: 600;
+.facts-card-title {
+  color: #424242;
+  font-size: 2.8125rem;
+  font-weight: 600;
 }
 
-.facts-cards-text{
-    color: #727272;
-    font-size: 1.25rem;
-    font-weight: 600;
+.facts-cards-text {
+  color: #727272;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* sponsors section styles */
+
+.sponsors {
+  text-align: center;
+  margin-top: 11rem;
+}
+
+.sponsors-title {
+  color: #131313;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.sponsors-text {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  padding-bottom: 3.1rem;
+}
+.sponsors-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsors-logo img {
+  filter: grayscale(100%);
 }
 
 /* responsive web design */
@@ -258,9 +287,17 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .facts-card-container{
+  .facts-card-container {
     flex-direction: column;
     gap: 1.4rem;
+  }
+  .sponsors-logo {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sponsors-logo img {
+    width: 165px;
   }
 }
 
@@ -283,7 +320,19 @@ main {
     flex-direction: column;
   }
 
-  .facts-card-container{
+  .facts-card-container {
     gap: 1rem;
+  }
+
+  .sponsors {
+    padding: 1rem;
+  }
+
+  .sponsors-logo {
+    gap: 1.5rem;
+  }
+
+  .sponsors-logo img {
+    width: 100px;
   }
 }
