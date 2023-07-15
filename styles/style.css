@@ -76,6 +76,7 @@ nav {
   font-weight: 600;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -87,4 +88,33 @@ nav {
   flex-direction: column;
   gap: 30px;
   max-width: 860px;
+}
+
+.banner-pic img {
+  width: 100%;
+}
+
+/* responsive web design */
+/* small devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* medium devices */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
